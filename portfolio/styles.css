@@ -1,14 +1,14 @@
 :root {
-    --primary: #43bdfa;     /* Deep teal as primary color */
-    --dark-bg: #121212;      /* Rich dark gray background */
-    --dark-gray: #1E1E1E;    /* Slightly lighter than background */
-    --light-gray: #777777;   /* Medium gray for form elements */
-    --accent-gold: #F4C430;  /* Amber/gold accent */
-    --accent-mint: #4ECCA3;  /* Mint green secondary accent */
-    --white: #F5F5F5;        /* Off-white for better eye comfort */
-    --card-bg: #1A1A1A;      /* Card background */
+    --primary: #43bdfa;    
+    --dark-bg: #121212;      
+    --dark-gray: #1E1E1E;    
+    --light-gray: #777777;   
+    --accent-gold: #F4C430;  
+    --accent-mint: #4ECCA3;  
+    --white: #F5F5F5;        
+    --card-bg: #1A1A1A;   
     
-    /* Skill colors */
+    /* skill colors */
     --html-color: #E44D26;
     --css-color: #1572B6;
     --js-color: #511ef7;
@@ -39,7 +39,7 @@ body {
     width: 100%;
 }
 
-/* Header & Navigation */
+/* head and nav*/
 header {
     display: flex;
     justify-content: space-between;
@@ -107,7 +107,7 @@ nav ul li a:hover .nav-tooltip {
     transform: translateY(0);
 }
 
-/* Hero Section */
+/* hero section */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -186,7 +186,7 @@ nav ul li a:hover .nav-tooltip {
     transform: translateX(5px);
 }
 
-/* About Section */
+/* about section */
 .about-section {
     padding: 100px 0;
     background-color: var(--dark-bg);
@@ -251,7 +251,7 @@ nav ul li a:hover .nav-tooltip {
     opacity: 0.9;
 }
 
-/* Skills Section */
+/* skills section */
 .skills-section {
     padding: 100px 0;
     background-color: var(--dark-gray);
@@ -274,7 +274,7 @@ nav ul li a:hover .nav-tooltip {
     padding-left: 15px;
 }
 
-/* Programming Languages Grid */
+/* Programming languages grid */
 .programming-languages-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -283,7 +283,7 @@ nav ul li a:hover .nav-tooltip {
     margin: 0 auto;
 }
 
-/* Tools Grid */
+/* tools grid */
 .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wraps based on content */
@@ -345,7 +345,7 @@ nav ul li a:hover .nav-tooltip {
     margin-bottom: 8px;
 }
 
-/* Progress Bar Styles */
+/* progress bar style */
 .progress-container {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
@@ -369,7 +369,7 @@ nav ul li a:hover .nav-tooltip {
     animation: progress-flow 2s ease-out forwards;
 }
 
-/* Progress text positioning */
+/* progressbar text positioning */
 .progress-text {
     position: absolute;
     top: 48%;
@@ -380,7 +380,7 @@ nav ul li a:hover .nav-tooltip {
     font-weight: bold;
 }
 
-/* Individual Progress Bar Settings */
+/* progress bar settiongs */
 .html-progress {
     width: 90%;
     background-color: var(--html-color);
@@ -411,13 +411,12 @@ nav ul li a:hover .nav-tooltip {
     background-color: var(--sql-color);
 }
 
-/*Animations */
+/*animations */
 @keyframes progress-flow {
     0% { width: 0; }
     100% { width: var(--width, 0%); }
 }
 
-/*custom width CSS variables */
 .html-progress { --width: 90%; }
 .css-progress { --width: 50%; }
 .js-progress { --width: 30%; }
@@ -425,7 +424,7 @@ nav ul li a:hover .nav-tooltip {
 .python-progress { --width: 40%; }
 .sql-progress { --width: 5%; }
 
-/* Projects Section */
+/* projects Section */
 .projects-section {
     padding: 100px 0;
     background-color: var(--dark-bg);
@@ -510,7 +509,7 @@ nav ul li a:hover .nav-tooltip {
     margin-right: 5px;
 }
 
-/* Contact Section */
+/* contact */
 .contact-section {
     padding: 100px 0;
     position: relative;
@@ -543,7 +542,7 @@ nav ul li a:hover .nav-tooltip {
     margin: 0 auto;
 }
 
-/* Footer */
+/* foot */
 footer {
     background-color: var(--dark-gray);
     padding: 30px 0;
@@ -581,7 +580,7 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Responsive Design */
+/* responsive  */
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
@@ -625,7 +624,7 @@ footer {
         margin: 0 10px;
     }
 }
-
+/* profile image */
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2.2rem;
