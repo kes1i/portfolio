@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="elements/fabi.png">
+    <title>Kesi's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add AOS library for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- Add Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Background canvas for Three.js animation -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- nav -->
+    <header>
+        <div class="logo">Ke<span class="accent-letter">s</span>i</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home" class="active">
+                        <i class="fas fa-home"></i>
+                        <span class="nav-tooltip">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <i class="fas fa-user"></i>
+                        <span class="nav-tooltip">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="fas fa-code"></i>
+                        <span class="nav-tooltip">Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <i class="fas fa-laptop-code"></i>
+                        <span class="nav-tooltip">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fas fa-envelope"></i>
+                        <span class="nav-tooltip">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/kes1i" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span class="nav-tooltip">GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kunal-chettri-359267281/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="nav-tooltip">LinkedIn</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!--hero sec with 3D element-->
+        <section id="home" class="hero">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1></h1> <!-- Empty initially, filled by typing effect -->
+                <p>A passionate web developer focused on creating<br>beautiful and functional websites.</p>
+                <a href="#projects" class="cta-button">View My Work <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div id="hero-3d-container" class="hero-3d"></div>
+        </section>
+
+        <!--about-->
+        <section id="about" class="about-section">
+            <div class="section-header" data-aos="fade-right">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="elements/fabi.png" alt="Kesi's Profile" class="profile-image">
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="300">
+                    <p>Hello! I'm a web developer with a passion for creating clean, responsive, and user-friendly websites. My journey in web development started with HTML and CSS, and I've been expanding my skills ever since.</p>
+                    <p>I specialize in front-end development with a growing interest in full-stack technologies. When I'm not coding, you can find me exploring new design trends or working on personal projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--skills with animated counters-->
+        <section id="skills" class="skills-section">
+            <div class="section-header" data-aos="fade-right">
+                <h2>Skill-Set</h2>
+            </div>
+            
+            <!--programming lang-->
+            <div class="skills-categories">
+                <div class="skills-category" data-aos="fade-up">
+                    <h3>Programming Languages</h3>
+                    
+                    <div class="programming-languages-grid">
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML5</h3>
+                            <p>Master builder of semantic structures-crafting strong foundations so the web doesn't collapse like a dirt house in a creeper explosion.</p>
+                            <div class="skill-level">
+                                <span>Advanced</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar html-progress animated-progress">
+                                        <span class="progress-text">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3>CSS3</h3>
+                            <p>Mastering the art of building with style-using Flexbox and Grid like perfectly placed blocks, crafting animations smoother than a creeper sneaking up at night.</p>
+                            <div class="skill-level">
+                                <span>Intermediate</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar css-progress animated-progress">
+                                        <span class="progress-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <p>Still figuring out redstone circuits, but I can make buttons work… sometimes. Learning how to automate things without blowing up my own contraptions.</p>
+                            <div class="skill-level">
+                                <span>Beginner</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar js-progress animated-progress">
+                                        <span class="progress-text">30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="400">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>C Programming</h3>
+                            <p>Tryin' to tame the wild beast of pointers-currently stuck in a cave, lost without torches.</p>
+                            <div class="skill-level">
+                                <span>Intermediate</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar c-progress animated-progress">
+                                        <span class="progress-text">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="500">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h3>Python</h3>
+                            <p>Brewing potions of automation-sometimes they work, sometimes they turn me into a poison potato</p>
+                            <div class="skill-level">
+                                <span>Intermediate</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar python-progress animated-progress">
+                                        <span class="progress-text">40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="600">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>SQL</h3>
+                            <p>Digging deep into the database mines sometimes its diamonds (perfect queries), other times it's just gravel (syntax errors).</p>
+                            <div class="skill-level">
+                                <span>Beginner</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar sql-progress animated-progress">
+                                        <span class="progress-text">5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--tools -->
+            <div class="skills-categories">
+                <div class="skills-category" data-aos="fade-up">
+                    <h3>Tools & Technologies</h3>
+                    
+                    <div class="tools-grid">
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fas fa-file-excel"></i>
+                            </div>
+                            <h3>MS Excel</h3>
+                            <p>Like organizing an inventory with shulker boxes-sorting, filtering, and crafting formulas to keep everything stacked perfectly. Pivot tables? Just another enchantment for efficiency!</p>
+                            <div class="skill-level">
+                                <span>Advanced</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <h3>Command Line</h3>
+                            <p>Navigating directories like exploring a stronghold-dark, mysterious, but full of powerful commands. One wrong move, and I might summon a Wither (or delete a critical file)!</p>
+                            <div class="skill-level">
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--project-->
+        <section id="projects" class="projects-section">
+            <div class="section-header" data-aos="fade-right">
+                <h2>My Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="portfolio.html" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/kes1i/portfolio" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>JavaScript Calculator</h3>
+                        <p>A functional calculator built with JavaScript with advanced math operations.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="calc/calc.html" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/kes1i/calculator" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager</h3>
+                        <p>A to-do list application with local storage for persistent data.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="todolist/todolist.html" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/kes1i/To-do-list" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--contact with 3D scene-->
+        <section id="contact" class="contact-section">
+            <h2 data-aos="zoom-in">Contact Me</h2>
+            <div id="contact-3d-container" class="contact-3d"></div>
+            <div class="contact-button" data-aos="zoom-in" data-aos-delay="200">
+                <a href="/cdn-cgi/l/email-protection#5f31302b3226323e36316c6b1f38323e3633713c3032" target="_blank" class="cta-button">Send me an Email <i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </div>
+    
+    <!--footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Kesi. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/kes1i" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kunal-chettri-359267281/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS animation library -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="animations.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'924cc3dacc77b053',t:'MTc0MjcyMDcwNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
