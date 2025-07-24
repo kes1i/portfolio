@@ -7,16 +7,10 @@
     <title>Kesi's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- Add AOS library for scroll animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <!-- Add Three.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-    <!-- Background canvas for Three.js animation -->
-    <canvas id="bg-canvas"></canvas>
-    
-    <!-- nav -->
+    <!-- Navigation Header -->
     <header>
         <div class="logo">Ke<span class="accent-letter">s</span>i</div>
         <nav>
@@ -68,17 +62,16 @@
     </header>
 
     <div class="container">
-        <!--hero sec with 3D element-->
+        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-                <h1></h1> <!-- Empty initially, filled by typing effect -->
+                <h1></h1>
                 <p>A passionate web developer focused on creating<br>beautiful and functional websites.</p>
                 <a href="#projects" class="cta-button">View My Work <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div id="hero-3d-container" class="hero-3d"></div>
         </section>
 
-        <!--about-->
+        <!-- About Section -->
         <section id="about" class="about-section">
             <div class="section-header" data-aos="fade-right">
                 <h2>About Me</h2>
@@ -94,13 +87,13 @@
             </div>
         </section>
 
-        <!--skills with animated counters-->
+        <!-- Skills Section -->
         <section id="skills" class="skills-section">
             <div class="section-header" data-aos="fade-right">
                 <h2>Skill-Set</h2>
             </div>
             
-            <!--programming lang-->
+            <!-- Programming Languages -->
             <div class="skills-categories">
                 <div class="skills-category" data-aos="fade-up">
                     <h3>Programming Languages</h3>
@@ -196,7 +189,7 @@
                                 <span>Beginner</span>
                                 <div class="progress-container">
                                     <div class="progress-bar sql-progress animated-progress">
-                                        <span class="progress-text">5%</span>
+                                        <span class="progress-text">15%</span>
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +198,7 @@
                 </div>
             </div>
             
-            <!--tools -->
+            <!-- Tools & Technologies -->
             <div class="skills-categories">
                 <div class="skills-category" data-aos="fade-up">
                     <h3>Tools & Technologies</h3>
@@ -237,7 +230,7 @@
             </div>
         </section>
 
-        <!--project-->
+        <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <div class="section-header" data-aos="fade-right">
                 <h2>My Projects</h2>
@@ -303,17 +296,16 @@
             </div>
         </section>
 
-        <!--contact with 3D scene-->
+        <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <h2 data-aos="zoom-in">Contact Me</h2>
-            <div id="contact-3d-container" class="contact-3d"></div>
             <div class="contact-button" data-aos="zoom-in" data-aos-delay="200">
-                <a href="mailto:kunal.k.0223@inspiria.edu.in" target="_blank" class="cta-button">Send me an Email <i class="fas fa-envelope"></i></a>
+                <a href="mailto:your-email@example.com" target="_blank" class="cta-button">Send me an Email <i class="fas fa-envelope"></i></a>
             </div>
         </section>
     </div>
     
-    <!--footer -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>© 2025 Kesi. All rights reserved.</p>
@@ -324,12 +316,8 @@
         </div>
     </footer>
 
-    <!-- AOS animation library -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-    <!-- Custom JS -->
     <script src="animations.js"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'924cc3dacc77b053',t:'MTc0MjcyMDcwNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>
